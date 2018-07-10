@@ -8,8 +8,8 @@ I would like to thank authors of PLANTS molecular docking software for making [P
 ## Can be used for Virtual Screening (VS).
 Steps to use the script. 
 1. (Required) [downlaod PLANTS](http://www.tcd.uni-konstanz.de/plants_download/) if not already downloaded. Follow the instructions to install and make sure to change the name of the PLANTS executable from default name (e.g. PLANTS1.2_64bit) to PLANTS1.2 and put the executable in the path.
-2. (Required) Download the script parallelPLANTS.sh and accessory perl sripts in the scripts folder.
-3. (Optional) Download the example files.
+2. (Required) Download the script parallelPLANTS.sh and accessory perl sripts in the scripts folder. Unzip the script folder using _unzip scripts.zip_ command. 
+3. (Optional) Download the example files. Unzip example files.
 4. Prepare the protein and ligand file for docking using your favourite tool. Save the prepared files in mol2 format.
 5. Define the binding site on the protein using PLANTS. Read the PLANTS manual for details **OR** run PLANTS in the following mode. This will generate _'bindingsite.def'_ file which you will need later during docking and virtual screening.
 ```diff 
