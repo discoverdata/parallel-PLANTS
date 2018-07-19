@@ -16,7 +16,7 @@ Steps to use the script.
 + PLANTS1.2 --mode bind pdbligand.mol2 (native or PDB ligand) 10 protein.mol2 (your protein file name)
 ```
 6. Done. Ready to roll!!.
-7. Issue the following command to run docking or virtual screening. Substitute the proteinFileName and ligandFileName with your protein and ligand files. The ligand file can be multi-mol2 file containing multiple small molecules in a single file for VS. Where **splits** = number of parallel instances of PLANTS you would like to run. The parallelPLANTS.sh script recommends you a value based on the number of core you have. 
+7. Issue the following command to run docking or virtual screening. Substitute the proteinFileName and ligandFileName with your protein and ligand files. The ligand file can be multi-mol2 file containing multiple small molecules in a single file for VS. Where **splits** = number of parallel instances of PLANTS you would like to run. The parallelPLANTS.sh script recommends you a value based on the number of core you have. If you have a small number of ligands to screen say less than 1000 I recommend use splits = 1.
 ```diff
 + bash parallelPLANTS.sh proteinFileName.mol2 ligandFileName.mol2 splits bindingsite.def
 ```
