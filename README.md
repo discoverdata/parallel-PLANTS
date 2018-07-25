@@ -3,7 +3,10 @@
 Parallel Molecular Docking using PLANTS software
 # Acknowledgement
 I would like to thank authors of PLANTS molecular docking software for making [PLANTS](http://www.tcd.uni-konstanz.de/research/plants.php) free for academic use.
-
+ 
+ ## If you use the this script please cite
+ [![DOI](https://zenodo.org/badge/140142034.svg)](https://zenodo.org/badge/latestdoi/140142034)
+ 
 # This script runs multiple independent instances of PLANTS by spliting the multi-mol2 ligand file. 
 ## Can be used for Virtual Screening (VS).
 Steps to use the script. 
