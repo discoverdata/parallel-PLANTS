@@ -25,7 +25,7 @@ Steps to use the script.
 ```
 8. If you have previously run the script and want to skip over some folders such as (file1, file3 and so no..). Follow the prompt to skip folders.
 
-9. If instead you want to remove all previous folders issue the following command where N = no. of folders to remove + 1. For example if you have 2 folders called (files1 and files2) created from previous run your N will be = 3 (2 + 1).
+9. If instead you want to remove all previous folders and rerun VS, issue the following command where N = no. of folders to remove + 1. For example if you have 2 folders called (files1 and files2) created from previous run your N will be = 3 (2 + 1).
 ```diff
 + yes "" | head -nN | bash parallelPLANTS.sh proteinFileName.mol2 ligandFileName.mol2 splits bindingsite.def
 ```
