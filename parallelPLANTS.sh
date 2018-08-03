@@ -55,7 +55,7 @@ fi
 function uniqDockedLigands {
 # This function gets the input form sorted_ligandRanking file and 
 # picks only unique ligands by ignoring any isomers of the ligand. 
-cut -f2,3 $1 | sed 's/_.*\t/\t/' | sort -rk1 >tempUniq
+cut -f2,3 $1 | sed 's/\(_[^_]*\).*\t/\1\t/' | sort -rk1 >tempUniq
 awk 'prev!=$1{print}{prev=$1}' tempUniq | sort -rk2 >uniqueLigands.csv
 uniq=$(cat uniqueLigands.csv |wc -l)
 echo $uniq
@@ -174,7 +174,7 @@ cut -f1,2 -d',' ligandRanking.csv | sed 's/,/\t/' | sed '/LIGAND_ENTRY/d' |sed '
 sed -i -e '1iFOLDER	LIGAND_ENTRY	TOTAL_SCORE\' sorted_ligandRanking.csv
 echo "To limit the result please enter the ${red} cutoff docking score (e.g -70)${reset} followed by a space 
 OR number of ${red} top hits (e.g. 25) ${reset}"
-echo "If mentioned, top hits are given priority over cutoff docking score. OR press ${red} ENTER ${reset} to continue"
+echo "If mentioned, top hits are given priority over cutoff docking score. OR press ${green} ENTER ${reset} to continue"
 read -er -a ANAME
 cutoff=$( bc <<< "${ANAME[0]} - 1" )
 top=$(( ${ANAME[1]} + 1 ))
