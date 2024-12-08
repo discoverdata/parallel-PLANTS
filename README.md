@@ -2,7 +2,7 @@
 ## Varun Khanna
 Parallel Molecular Docking using PLANTS software
 # Acknowledgement
-I would like to thank authors of PLANTS molecular docking software for making [PLANTS](http://www.tcd.uni-konstanz.de/research/plants.php) free for academic use.
+I would like to thank authors of PLANTS molecular docking software for making [PLANTS](PLANTS1.2) free for academic use.
  
  ## If you use the this script please cite
  [![DOI](https://zenodo.org/badge/140142034.svg)](https://zenodo.org/badge/latestdoi/140142034)
