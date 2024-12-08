@@ -11,7 +11,7 @@ I would like to thank authors of PLANTS molecular docking software for making [P
 ## Can be used for Virtual Screening (VS).
 Steps to use the script. 
 1. (Required) [download PLANTS](PLANTS1.2) if not already downloaded. Copy PLANTS1.2 executable file into the PATH folder (for example /usr/local/bin). 
-2. (Optional) Or append the following to ~/.bash_profile or ~/.bashrc files. Add <LOACATION to PLANTS executable> in the PATH. For example PLANTS_HOME = ~/<PATH TO PLANTS DIR/PLANTS1.2>. Then do export "PATH=$PATH:$PLANTS_HOME". Finally reload the shell by the command source ~/.bashrc.
+2. (Optional) Append the following to ~/.bash_profile or ~/.bashrc files. PLANTS_HOME = ~/<PATH TO PLANTS DIR/PLANTS1.2>. Then do export "PATH=$PATH:$PLANTS_HOME". Finally reload the shell by the command source ~/.bashrc.
 3. (Required) Download the script parallelPLANTS.sh and accessory perl sripts in the scripts folder. Unzip the script folder using _unzip scripts.zip_ command. 
 4. (Optional) Download the example files. Unzip example files.
 5. Prepare the protein and ligand file for docking using your favourite tool. Save the prepared files in mol2 format.
